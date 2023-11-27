@@ -1,0 +1,88 @@
+inversa 0       0.001348
+1       0.001348
+2       0.001348
+3       0.001348
+4       0.001348
+          ...   
+3597    0.058824
+3598    0.058824
+3599    0.058824
+3600    0.058824
+3601    0.058824
+Name: Na, Length: 3602, dtype: float64
+inversa_2 0       0.001348
+1       0.001348
+2       0.001348
+3       0.001348
+4       0.001348
+          ...   
+3597    0.058824
+3598    0.058824
+3599    0.058824
+3600    0.058824
+3601    0.058824
+Name: Na, Length: 3602, dtype: float64
+Variável independente_1: ['x']
+Parâmetros modelo_1: ['exp_1_amplitude', 'exp_1_decay']
+
+Variável independente_2: ['x']
+Parâmetros modelo_2: ['exp_2_amplitude', 'exp_2_decay']
+Name                Value      Min      Max   Stderr     Vary     Expr Brute_Step
+exp_1_amplitude     301.6     -inf      inf     None     True     None     None
+exp_1_decay         17.55     -inf      inf     None     True     None     None
+
+Name                Value      Min      Max   Stderr     Vary     Expr Brute_Step
+exp_2_amplitude     295.1     -inf      inf     None     True     None     None
+exp_2_decay         25.88     -inf      inf     None     True     None     None
+[[Model]]
+    Model(exponential, prefix='exp_1_')
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 29
+    # data points      = 3601
+    # variables        = 2
+    chi-square         = 1907543.82
+    reduced chi-square = 530.020512
+    Akaike info crit   = 22590.7689
+    Bayesian info crit = 22603.1468
+    R-squared          = 0.97217678
+[[Variables]]
+    exp_1_amplitude:  652.167988 +/- 2.08723964 (0.32%) (init = 301.5959)
+    exp_1_decay:      8.07765151 +/- 0.03659834 (0.45%) (init = 17.5481)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(exp_1_amplitude, exp_1_decay) = -0.7064
+
+[[Model]]
+    Model(exponential, prefix='exp_2_')
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 26
+    # data points      = 3601
+    # variables        = 2
+    chi-square         = 5406032.74
+    reduced chi-square = 1502.09301
+    Akaike info crit   = 26341.9272
+    Bayesian info crit = 26354.3051
+    R-squared          = 0.91854115
+[[Variables]]
+    exp_2_amplitude:  612.417483 +/- 3.05225753 (0.50%) (init = 295.093)
+    exp_2_decay:      10.7230256 +/- 0.07567929 (0.71%) (init = 25.87641)
+[[Correlations]] (unreported correlations are < 0.100)
+    C(exp_2_amplitude, exp_2_decay) = -0.7068
+df: {'x_data': array([0.00000000e+00, 1.66666667e-02, 3.33333333e-02, ...,
+       5.99666667e+01, 5.99833333e+01, 6.00000000e+01]), 'resultado_fit_1': <lmfit.model.ModelResult object at 0x14804a7fa2f0>, 'resultado_fit_2': <lmfit.model.ModelResult object at 0x14804a8385e0>, 'y1_data': array([742., 742., 742., ...,  17.,  17.,  17.]), 'y2_data': array([758., 758., 758., ...,  46.,  46.,  46.])}
+[[Model]]
+    Model(quadratic_model)
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 5
+    # data points      = 3600
+    # variables        = 1
+    chi-square         = 2617829.33
+    reduced chi-square = 727.376863
+    Akaike info crit   = 23723.0009
+    Bayesian info crit = 23729.1896
+    R-squared          = 0.43594102
+[[Variables]]
+    a: -2.8919e-04 +/- 4.9033e-06 (1.70%) (init = 1)
+Temperatura Final do Sistema: 1.2 K

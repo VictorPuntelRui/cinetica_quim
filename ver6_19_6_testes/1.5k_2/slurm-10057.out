@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/gustavo.beneti/work/cinetica_quimica/1.5k_2/ver6_19_6_no_UI.py", line 34, in <module>
+    from lmfit.models import ExponentialModel, LinearModel
+ModuleNotFoundError: No module named 'lmfit'
